@@ -651,6 +651,7 @@
     <modules>
         <module>astradb-to-bigquery</module>
         <module>azure-eventhub-to-pubsub</module>
+        <module>aws-dynamodb-exports-to-spanner</module>
         <module>bigtable-changestreams-to-hbase</module>
         <module>bigtable-common</module>
         <module>bigquery-to-bigtable</module>
@@ -701,6 +702,6 @@
         <module>spanner-migrations-sdk</module>
         <module>sqlserver-to-googlecloud</module>
         <module>streaming-data-generator</module>
- </modules>
+    </modules>
 
 </project>

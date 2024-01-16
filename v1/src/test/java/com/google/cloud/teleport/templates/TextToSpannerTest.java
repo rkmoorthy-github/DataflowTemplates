@@ -51,7 +51,7 @@ public class TextToSpannerTest {
   private SpannerSchema testSchema = new SpannerSchema();
   private Map<String, String> testRow = new HashMap<String, String>();
   private final int expectedNumOfColumns = 6;
-  private TextToSpanner textSpannerPipeline = new TextToSpanner();
+  private TextToSpanner textSpannerPipeline = new cc();
   private final TextToSpanner.RowToMutationFn rowToMutationFn =
       new TextToSpanner.RowToMutationFn(
           StaticValueProvider.of(projectID),

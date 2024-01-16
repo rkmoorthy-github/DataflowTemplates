@@ -1,0 +1,9 @@
+{
+  "mainClass": "com.google.cloud.teleport.v2.templates.DynamoDBExportsToSpanner",
+  "classPath": "/template/aws-dynamodb-exports-to-spanner/*:/template/aws-dynamodb-exports-to-spanner/libs/*:/template/aws-dynamodb-exports-to-spanner/classes",
+  "defaultParameterValues": {
+    "labels": "{\"goog-dataflow-provided-template-type\":\"flex\",\"goog-dataflow-provided-template-name\":\"aws-dynamodb-exports-to-spanner\"}",
+    "autoscalingAlgorithm": "THROUGHPUT_BASED",
+    "maxNumWorkers": "10"
+  }
+}

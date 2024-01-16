@@ -1,0 +1,56 @@
+{
+  "name": "AWS DynamoDB Exports to Cloud Spanner",
+  "description": "Batch pipeline. Ingests data into Cloud Spanner table from AWS DynamoDB Exports stored in S3 usingF Apache Beam",
+  "parameters": [
+    {
+      "name": "projectId",
+      "label": "GCP Project Id",
+      "helpText": "GCP Project Id of where the Spanner table lives",
+      "regexes": [],
+      "paramType": "TEXT"
+    },
+    {
+      "name": "spannerInstance",
+      "label": "Cloud Spanner instance",
+      "helpText": "Cloud Spanner instance to ingest data into",
+      "regexes": [],
+      "paramType": "TEXT"
+    },
+    {
+      "name": "databaseName",
+      "label": "Cloud Spanner database name",
+      "helpText": "Cloud Spanner database name'",
+      "regexes": [],
+      "paramType": "TEXT"
+    },
+    {
+      "name": "tableName",
+      "label": "Cloud Spanner table name",
+      "helpText": "Cloud Spanner table name'",
+      "regexes": [],
+      "paramType": "TEXT"
+    },
+    {
+      "name": "secretWithAWSCredsUri",
+      "label": "GCP Secret manager URI",
+      "helpText": "GCP Secret Manager secret URI, version number is optional. If not provided, latest version would be assumed.'",
+      "regexes": ["^projects/(.*)/secrets/(.*)$"],
+      "paramType": "TEXT"
+    },
+    {
+      "name": "awsRegion",
+      "label": "AWS Region",
+      "helpText": "AWS Region where exports are stored",
+      "regexes": [],
+      "paramType": "TEXT"
+    },
+    {
+      "name": "manifestS3URI",
+      "label": "S3 URI of DynamoDB Exports manifest file",
+      "helpText": "S3 URI of DynamoDB Exports manifest file",
+      "regexes": [],
+      "paramType": "TEXT"
+    }
+
+  ]
+}
